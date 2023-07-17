@@ -1,0 +1,55 @@
+// import React, { useState } from 'react';
+// import { ScrollView, Text, TextInput, Button } from 'react-native';
+// import * as ImagePicker from 'expo-image-picker';
+
+// function AddCar(props) {
+//   const[picture,setPicture]=useState(null);
+//     const[data,setData]=useState({
+//         make:"",
+//         model:"",
+//         engine:"",
+//         seats:"",
+//         doors:"",
+//         rent:""
+//       });
+
+//       const pickImage = async () => {
+//         // No permissions request is necessary for launching the image library
+//         let result = await ImagePicker.launchImageLibraryAsync({
+//           mediaTypes: ImagePicker.MediaTypeOptions.All,
+//           allowsEditing: true,
+//           aspect: [4, 3],
+//           quality: 1,
+//         });
+    
+//         console.log(result);
+    
+//         if (!result.canceled) {
+//             setPicture(result.assets[0].uri);
+//         }
+//       };
+
+//     return (
+//         <ScrollView>
+//             <Text>Upload image</Text>
+//             <Button
+//             title='Select Image'
+//             onPress={()=> {pickImage}}
+//             />
+//             <Text>Make</Text>
+//             <TextInput/>
+//             <Text>Model</Text>
+//             <TextInput/>
+//             <Text>Engine</Text>
+//             <TextInput/>
+//             <Text>Seats</Text>
+//             <TextInput/>
+//             <Text>Doors</Text>
+//             <TextInput/>
+//             <Text>Rent</Text>
+//             <TextInput/>
+//         </ScrollView>
+//     );
+// }
+
+// export default AddCar;
