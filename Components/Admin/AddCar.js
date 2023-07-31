@@ -38,9 +38,9 @@ export default function ImagePickerExample() {
     }));
   };
   async function writeData() {
-    
+    console.log("data writing button is pressed");
     await addDoc(collection(db, "Toyota"), {
-      Pic : image 
+      Pic : data.make
     });
    
   }
@@ -50,9 +50,9 @@ export default function ImagePickerExample() {
             <Text style={styles.heading}>Enter details of car to add to showroom</Text>
              <Text style={styles.headings}>Upload image</Text>
              <Button title="Pick an image from your phone" onPress={pickImage} />
-             <View style={styles.image}>
+             {/* <View style={styles.image}>
               {image && <Image source={{ uri: image }} style={{ width: 200, height: 200, marginTop:30, marginBottom:20 }} />}
-              </View>
+              </View> */}
              <Text style={styles.headings}>Make</Text>
              <TextInput style={styles.inputs} onChange={(e)=>{handleChange(e)}}/>
              <Text style={styles.headings}>Model</Text>
@@ -66,7 +66,7 @@ export default function ImagePickerExample() {
              <Text style={styles.headings}>Rent</Text>
              <TextInput style={styles.inputs} onChange={(e)=>{handleChange(e)}}/>
              <Button title='Add Vehicle'
-             onClick={writeData}
+             onClick={writeData()}
              />
          </ScrollView>
   );

@@ -41,7 +41,7 @@ function Admin(){
 const stack1=createNativeStackNavigator();
 function ToyotaNav(){
   return(
-    <stack1.Navigator initialRouteName="SignUp" screenOptions={{ headerShown: false }}>
+    <stack1.Navigator screenOptions={{ headerShown: false }}>
       <stack1.Screen name="Toyota" component={AdminToyota} />
       <stack1.Screen name="CarView" component={CarView}/>
     </stack1.Navigator>

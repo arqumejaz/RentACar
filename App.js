@@ -22,7 +22,6 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="AddCar" component={AddCar}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="SignUp" component={SignUp}/>
         <Stack.Screen name="MyDrawer" component={MyNav} />
@@ -36,7 +35,7 @@ function App() {
 const stack1=createNativeStackNavigator();
 function ToyotaNav(){
   return(
-    <stack1.Navigator initialRouteName="SignUp" screenOptions={{ headerShown: false }}>
+    <stack1.Navigator screenOptions={{ headerShown: false }}>
       <stack1.Screen name="Toyota" component={Toyota} />
       <stack1.Screen name="CarView" component={CarView}/>
     </stack1.Navigator>
