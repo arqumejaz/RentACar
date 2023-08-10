@@ -1,0 +1,10 @@
+import React, { useState } from 'react';
+import { Button, Image, View, Platform, StyleSheet, ScrollView, Text, TextInput } from 'react-native';
+import { getDocs, addDoc, collection, deleteDoc, updateDoc, doc } from 'firebase/firestore';
+import { db, storage } from "../../firebase";
+import * as ImagePicker from 'expo-image-picker';
+
+console.log("Storage Available:", !!storage); // Check if 'storage' is available
+
+// Rest of your AddCar component code...
+console.log("Storage Available:", !!storage); // Check if 'storage' is available

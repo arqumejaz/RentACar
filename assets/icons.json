@@ -1,0 +1,16 @@
+{
+  "icons": [
+    {
+      "name": "ICON_UNMUTED_BUTTON",
+      "src": "./assets/images/unmuted_button.png",
+      "width": 67,
+      "height": 58
+    },
+    {
+      "name": "ICON_TRACK_1",
+      "src": "./assets/images/track_1.png",
+      "width": 166,
+      "height": 5
+    }
+  ]
+}
